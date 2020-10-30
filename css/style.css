@@ -26,7 +26,12 @@ h1,
 h2 {
 }
 
-#main .row {
+.row {
+    margin: 0;
+}
+
+#main .block {
+    padding-top: 30px;
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -289,16 +294,6 @@ b {
     width: 100%;
 }
 
-h2 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.rev {
-    padding-left:
-}
-
-
 
 .ftco-animatea {
     opacity: 0;
@@ -453,14 +448,15 @@ h2 {
 
 
 .rotate {
-    font-size: 23px;
-    font-style: italic;
+    font-size: 25px;
+    /*font-style: italic;*/
     color: yellow;
     position: absolute;
-    left: 375px;
+    left: 385px;
 }
 
 .rotate .heading {
+    /*border: 1px solid yellow;*/
     background-color: #212126;
     padding: 0 10px;
     -webkit-transform: rotate(90deg);
@@ -723,4 +719,19 @@ h2 {
     bottom: 0;
     left: 60px;
     margin: 10px;
+}
+
+#line {
+    border-left: 1px solid yellow;
+    position: absolute;
+    left: 365px;
+    height: 4000px;
+}
+
+
+#wpp {
+    opacity: .3;
+    padding-left: 320px;
+    width: 100%;
+    height: 100%;
 }
