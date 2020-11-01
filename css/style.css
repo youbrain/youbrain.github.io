@@ -23,25 +23,28 @@ h2 {
 }
 
 h1,
-h2 {
-}
+h2 {}
 
 .row {
     margin: 0;
 }
 
 #main .block {
-    padding-top: 30px;
+    padding-top: 80px;
 }
+
 ::-webkit-scrollbar {
     width: 5px;
 }
+
 ::-webkit-scrollbar-track {
     background: #212126;
 }
+
 ::-webkit-scrollbar-thumb {
     background: yellow;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: yellow;
 }
@@ -50,9 +53,9 @@ h2 {
     font-style: italic;
     font-size: 20px;
     font-weight: 800;
-    padding: 5px 0 0 7px;
+    padding: 2px 0 0 3px;
     line-height: 20px;
-    height: 60px;
+    height: 50px;
     background-color: yellow;
     color: #16161A;
     position: relative;
@@ -90,7 +93,7 @@ a:hover {
 
 
 aside {
-    width: 320px;
+    width: 310px;
     position: fixed;
     bottom: 0;
     top: 0;
@@ -449,15 +452,16 @@ b {
 
 .rotate {
     font-size: 25px;
-    /*font-style: italic;*/
+    font-style: italic;
     color: yellow;
     position: absolute;
     left: 385px;
 }
 
 .rotate .heading {
+    top: -55px;
     /*border: 1px solid yellow;*/
-    background-color: #212126;
+    background-color: #16161A/*#212126*/;
     padding: 0 10px;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -470,6 +474,7 @@ b {
     -o-transform-origin: left top 0;
     transform-origin: left top 0;
     position: relative;
+    letter-spacing: 3px;
 }
 
 .rotate1 .heading:after {
@@ -490,11 +495,11 @@ b {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
     -webkit-transform-origin: 0;
     -ms-transform-origin: 0;
     transform-origin: 0;
@@ -503,8 +508,8 @@ b {
 
 .article .blog-img .link .read:after {
     position: absolute;
-    top: 10px;
-    left: -50px;
+    top: 9px;
+    /*left: 50px;*/
     content: '';
     background: yellow;
     width: 40px;
@@ -517,7 +522,7 @@ b {
 
 .article .blog-img:hover .link {
     opacity: 1;
-    bottom: 50px;
+    bottom: 150px;
 }
 
 .article .blog-img:hover img {
@@ -534,13 +539,14 @@ b {
 }
 
 .article .desc .meta {
+    color: #9da2a4;
     position: absolute;
     top: -40px;
     left: 20px;
     background: #16161A;
     color: white;
     padding: 5px 5px;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 4px;
     -webkit-transition: 1s;
@@ -554,7 +560,7 @@ b {
 }
 
 .article .desc h2 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .article .desc h2 a {
@@ -564,7 +570,7 @@ b {
 
 .article:hover .meta {
     background: #16161A;
-    color: white;
+    /*color: #9da2a4;*/
 }
 
 .wrapper {
@@ -654,14 +660,14 @@ b {
 #small_side {
     position: absolute;
     background-color: #16161A;
-    width: 60px;
+    width: 50px;
     height: 100%;
 }
 
 
 #author_link {
     float: left;
-    margin-left: 60px;
+    margin-left: 50px;
     /*border: 1px solid yellow;*/
 }
 
@@ -678,7 +684,7 @@ b {
     position: absolute;
     bottom: 0;
     text-align: center;
-    padding-left: 14px; 
+    padding-left: 10px;
 }
 
 #iconss a {
@@ -726,12 +732,33 @@ b {
     position: absolute;
     left: 365px;
     height: 4000px;
+    margin-top: 900px;
 }
 
 
 #wpp {
     opacity: .3;
-    padding-left: 320px;
+    padding-left: 310px;
     width: 100%;
-    height: 100%;
+}
+
+#on_img {
+    border: 1px solid yellow;
+    background-color: #16161A;
+    padding: 30px;
+    position: absolute;
+    top: 200px;
+    margin: 0 80px 0 360px;
+}
+
+#on_img h1 {
+    color: yellow;
+}
+
+.block h2 {
+    padding-bottom: 20px;
+}
+
+.desc h2 {
+    padding: 0;
 }
