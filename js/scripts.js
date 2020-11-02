@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
     jQuery('.skillbar').each(function(){
         jQuery(this).find('.skillbar-bar').animate({
             width:jQuery(this).attr('data-percent')
-        },1000);
+        },3000);
     });
 });
 
@@ -24,7 +24,7 @@ jQuery(function ($) {
 
     (function () {
         $("#review").owlCarousel({
-            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            autoPlay: 10000, //Set AutoPlay to 3 seconds
             items: 2,
             itemsDesktop: [1199, 3],
             itemsDesktopSmall: [979, 3]

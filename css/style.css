@@ -22,8 +22,6 @@ h2 {
     padding-left: 0;
 }
 
-h1,
-h2 {}
 
 .row {
     margin: 0;
@@ -108,9 +106,11 @@ aside {
     -webkit-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    /*border-right: 1px solid #16161A*/
 }
 
 #main {
+    /*border-top: 1px solid yellow;*/
     padding-top: 40px;
     padding-left: 410px;
     padding-right: 80px;
@@ -382,7 +382,7 @@ b {
 
 .counter {
     font-size: 2em;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    /*font-family: 'Ubuntu Condensed', sans-serif;*/
     color: yellow;
 }
 
@@ -653,7 +653,7 @@ b {
 }
 
 .pados {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 
@@ -666,14 +666,18 @@ b {
 
 
 #author_link {
-    float: left;
-    margin-left: 50px;
+    float: right;
+    /*margin-left: 50px;*/
     /*border: 1px solid yellow;*/
 }
 
 #author_link span {
+    background-color: #16161A;
+    position: absolute;
     font-size: 25px;
-    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: -25px;
+    padding: 5px;
     /*background-color: #16161A;*/
     text-decoration: none;
     /*text-transform: uppercase;*/
@@ -696,25 +700,30 @@ b {
 }
 
 
-#nav {
+nav {
     position: absolute;
     top: 500px;
-    /*margin-left: 70px;*/
-    width: 100%;
+    margin-left: 20px;
 }
 
 #nav li {
-    padding: 10px;
-    padding-left: 40px;
-    /*font-family: 'Ubuntu Condensed', sans-serif;*/
+    display: block;
+    width: 273px;
+}
+
+
+#nav a {
     text-transform: uppercase;
     color: #A1A2A4;
     list-style: none;
+    padding-left: 30px;
 }
 
 #nav .active {
+    width: 100%; 
     background-color: #16161A;
-    color: white;
+    /*padding-left: 80px;*/
+    color: white;   
     border-right: 5px solid yellow;
 }
 
@@ -737,18 +746,18 @@ b {
 
 
 #wpp {
-    opacity: .3;
+    opacity: .5;
     padding-left: 310px;
     width: 100%;
 }
 
 #on_img {
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
     background-color: #16161A;
     padding: 30px;
     position: absolute;
-    top: 200px;
-    margin: 0 80px 0 360px;
+    top: 350px;
+    margin: 0 180px 0 460px;
 }
 
 #on_img h1 {
@@ -756,7 +765,7 @@ b {
 }
 
 .block h2 {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .desc h2 {
