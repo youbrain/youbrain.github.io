@@ -1,5 +1,7 @@
 body {
     font-family: 'Jura', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
+
     background-color: #16161A;
     color: white;
     font-size: 120%;
@@ -12,6 +14,8 @@ h4,
 h5,
 h6 {
     font-family: 'Raleway', sans-serif;
+    /*font-family: 'Jura', sans-serif;*/
+
 }
 
 h2 {
@@ -28,7 +32,7 @@ h2 {
 }
 
 #main .block {
-    padding-top: 80px;
+    margin-top: 80px;
 }
 
 ::-webkit-scrollbar {
@@ -113,7 +117,7 @@ aside {
     /*border-top: 1px solid yellow;*/
     padding-top: 40px;
     padding-left: 410px;
-    padding-right: 80px;
+    padding-right: 40px;
 }
 
 .title {
@@ -382,7 +386,6 @@ b {
 
 .counter {
     font-size: 2em;
-    /*font-family: 'Ubuntu Condensed', sans-serif;*/
     color: yellow;
 }
 
@@ -459,7 +462,8 @@ b {
 }
 
 .rotate .heading {
-    top: -55px;
+    z-index: 2;
+    /*top: -55px;*/
     /*border: 1px solid yellow;*/
     background-color: #16161A/*#212126*/;
     padding: 0 10px;
@@ -737,6 +741,7 @@ nav {
 }
 
 #line {
+    z-index: 1;
     border-left: 1px solid yellow;
     position: absolute;
     left: 365px;
@@ -770,4 +775,54 @@ nav {
 
 .desc h2 {
     padding: 0;
+}
+
+#f_img {
+    background-image: url(../img/IMG_20201102_151937_595.jpg);
+    margin-left: 310px;
+    width: 100%-310px;
+    height: 950px;
+    opacity: 0.4;
+    background-attachment: fixed;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.col h3 {
+    text-align: center;
+}
+
+.text-block img {
+    margin-top: -10%;
+    width: 100%;
+}
+
+
+.text-block .img {
+    /*width: 100%;  Ширина области */
+    height: 400px; /* Высота области */
+    overflow: hidden; /* Прячем всё за пределами */
+
+}
+
+.text-block .txt {
+    padding: 20px; 
+}
+
+.text-block {
+    /*border: 1px solid yellow;*/
+}
+
+.txt h2 {
+    color: yellow;
+    display: inline;
+    /*margin-bottom: 40px;*/
+    /*background-color: #212126;*/
+}
+
+.carousel-item {
+    padding: 50px;
 }
