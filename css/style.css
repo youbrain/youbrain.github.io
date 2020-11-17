@@ -1,5 +1,4 @@
 body {
-    font-family: 'Jura', sans-serif;
     /*font-family: 'Raleway', sans-serif;*/
 
     background-color: #16161A;
@@ -13,8 +12,16 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*font-weight: 600; */
     /*font-family: 'Jura', sans-serif;*/
+    font-family: 'Jura', sans-serif;
+
+    /*font-weight: 600;*/
+
+    letter-spacing: 1px;
+
 
 }
 
@@ -50,6 +57,11 @@ h2 {
 ::-webkit-scrollbar-thumb:hover {
     background: yellow;
 }
+
+#loggo:hover {
+    opacity: 0.5;
+}
+
 
 #loggo {
     font-style: italic;
@@ -115,6 +127,8 @@ aside {
 
 #main {
     /*border-top: 1px solid yellow;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    font-weight: 300;
     padding-top: 40px;
     padding-left: 410px;
     padding-right: 40px;
@@ -456,12 +470,14 @@ b {
 .rotate {
     font-size: 25px;
     font-style: italic;
-    color: yellow;
+    color: white;
     position: absolute;
     left: 385px;
 }
 
 .rotate .heading {
+    font-family: 'Jura', sans-serif;
+
     z-index: 2;
     /*top: -55px;*/
     /*border: 1px solid yellow;*/
@@ -550,10 +566,15 @@ b {
     background: #16161A;
     color: white;
     padding: 5px 5px;
-    font-size: 12px;
+    font-size: 19px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    -webkit-transition: 1s;
+    -webkit-transition: 1s;    
+    font-family: 'Jura', sans-serif;
+
+    /*font-weight: 600;*/
+
+    letter-spacing: 1px;
     -o-transition: 1s;
     transition: 1s;
     -webkit-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
@@ -662,6 +683,7 @@ b {
 
 
 #small_side {
+    font-family: 'Jura', sans-serif;
     position: absolute;
     background-color: #16161A;
     width: 50px;
@@ -676,37 +698,33 @@ b {
 }
 
 #author_link span {
-    background-color: #16161A;
-    position: absolute;
-    font-size: 25px;
-    margin-left: 20px;
-    margin-top: -25px;
-    padding: 5px;
+    font-family: 'Jura', sans-serif;
+    font-style: italic;
+    /*background-color: #16161A;*/
+    /*position: absolute;*/
+    font-size: 27px;
+    margin-left: 50px;
+    /*margin-top: -25px;*/
+    /*padding: 5px;*/
     /*background-color: #16161A;*/
     text-decoration: none;
     /*text-transform: uppercase;*/
     color: white;
 }
 
-#iconss {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    padding-left: 10px;
-}
-
-#iconss a {
-    /*padding-bottom: 200px;*/
-}
-
-#iconss div {
-    margin-bottom: 20px;
+#aside-bottom i {
+    color: grey;
+    /*display: inline;*/
+    /*padding-top: 15px;*/
+    padding-right: 20px;
+    font-size: 20px;
 }
 
 
 nav {
+
     position: absolute;
-    top: 500px;
+    top: 100px;
     margin-left: 20px;
 }
 
@@ -715,29 +733,58 @@ nav {
     width: 273px;
 }
 
+#nav a:hover {
+    color: white;
+}
+#nav .active:hover {
+    color: yellow;
+}
 
 #nav a {
-    text-transform: uppercase;
-    color: #A1A2A4;
+    /*color: white;*/
+    font-family: 'Jura', sans-serif;
+    /*text-transform: uppercase;*/
+    /*font-style: italic;*/
+    color: grey;
+    font-size: 22px;
+    /*font-weight: 600;*/
+    /*letter-spacing: 1.8px;*/
+    /*font-kerning: */
+    /*color: #A1A2A4;*/
     list-style: none;
     padding-left: 30px;
 }
 
 #nav .active {
     width: 100%; 
+    /*font-style: italic;*/
     background-color: #16161A;
     /*padding-left: 80px;*/
-    color: white;   
+    color: yellow;   
     border-right: 5px solid yellow;
 }
 
 #aside-bottom {
-    color: #9DA2A4;
-    font-size: 17px;
+    /*color: #9DA2A4;*/
+    text-align: center;
+    /*font-size: 17px;*/
     position: absolute;
     bottom: 0;
     left: 60px;
+    padding-bottom: 5px;
     margin: 10px;
+    width: 74%
+}
+
+#aside-bottom i:hover{
+    color: white;
+    /*color: grey;*/
+    /*opacity: 0.5;*/
+}
+
+
+.nav-link:hover {
+    color: white;
 }
 
 #line {
@@ -778,9 +825,9 @@ nav {
 }
 
 #f_img {
-    background-image: url(../img/IMG_20201102_151937_595.jpg);
+    background-image: url(../img/IMG_8626.JPG);
     margin-left: 310px;
-    width: 100%-310px;
+    /*width: 100%-310px;*/
     height: 950px;
     opacity: 0.4;
     background-attachment: fixed;
@@ -825,4 +872,8 @@ nav {
 
 .carousel-item {
     padding: 50px;
+}
+
+aside {
+    /*opacity: 0.5;*/
 }
