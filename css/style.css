@@ -30,9 +30,31 @@ h2 {
 }
 
 .col {
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.skills li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: yellow; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#lang {
+    width: 30px;
+    left: 10px;
+    position: absolute;
+    bottom: 20px;
+    /*transform: rotate(-90deg);*/
+}
 
 .row {
     margin: 0;
@@ -87,11 +109,9 @@ h2 {
 }
 
 #author {
-    display: block;
-    max-height: 390px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    /*display: block;*/
+    width: 100%;
+    padding-left: 50px
 }
 
 a {
@@ -104,7 +124,11 @@ a:hover {
 
 }
 
+.carousel-inner {}
 
+.carousel-indicators .active {
+    background-color: yellow;
+}
 
 aside {
     width: 310px;
@@ -416,7 +440,8 @@ b {
 .article {
     display: block;
     margin-bottom: 60px;
-    width: 85%;
+    /*width: 85%;*/
+    margin: 40px;
     border: 1px solid yellow;
 }
 
@@ -426,6 +451,10 @@ b {
     overflow: hidden;
     width: 100%;
 }
+
+.carousel-item {
+    padding: 0;    
+ }
 
 .article .blog-img img {
     position: relative;
@@ -692,9 +721,13 @@ b {
 
 
 #author_link {
-    float: right;
+    /*float: right;*/
     /*margin-left: 50px;*/
     /*border: 1px solid yellow;*/
+    /*padding-left: 50px;    */
+}
+
+#author_link img {
 }
 
 #author_link span {
@@ -805,11 +838,11 @@ nav {
 
 #on_img {
     /*border: 1px solid yellow;*/
-    background-color: #16161A;
+    /*background-color: #16161A;*/
     padding: 30px;
     position: absolute;
     top: 350px;
-    margin: 0 180px 0 460px;
+    margin: 0 230px 0 520px;
 }
 
 #on_img h1 {
@@ -835,6 +868,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+      filter: blur(4px);
 
 }
 
