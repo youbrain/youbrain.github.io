@@ -1,0 +1,149 @@
+body {
+    background-color: #16161A;
+    color: white;
+    /*font-size: 120%;*/
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+#brder1 {
+    position: absolute;
+    margin: 0 40% 0 40%;
+    border: 1px solid yellow;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 0;
+    color: yellow;
+}
+header {
+    padding-top: 50px;
+}
+header p {
+    padding-top: 20px
+}
+
+.personal-details {
+    display: inline;
+}
+
+.personal-details small {
+    color: yellow;
+    font-size: 30px;
+}
+.subtitle {
+    color: grey;
+}
+
+.name-wrapper span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300
+}
+
+.img-fluid {
+    /*width: 328px;*/
+    opacity: 0.8;
+}
+
+section {
+    padding-top: 100px;
+}
+
+
+
+.pads {
+    padding-top: 50px;
+}
+/*
+#a {
+    margin-top: 100px;
+}
+*/
+
+.skillbar {
+    height: 5px;
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #212126;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    height: 25px;
+    position: absolute;
+    top: -24px;
+    left: 0;
+    color: #ffffff;
+}
+
+.right_percent {
+    float: right;
+    margin-top: -35px;
+}
+
+.skillbar-title span {
+    display: block;
+    margin-top: -10px;
+}
+
+.skillbar-bar {
+    height: 5px;
+    width: 0px;
+    background: yellow;
+    border-right: 5px solid #16161A;
+}
+
+
+ul {
+    list-style: none;
+    /* Remove default bullets */
+}
+
+.skills li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: yellow;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -2em;
+    /* Also needed for space (tweak if needed) */
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #212126;
+}
+
+::-webkit-scrollbar-thumb {
+    background: yellow;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: yellow;
+}
