@@ -113,11 +113,12 @@ ul {
     top: 0;
     right: 0;
     font-size: 35px;
-    color: white
+    color: yellow
 }
 
 #lang_switcher:hover {
-    color: grey;
+    /*color: grey;*/
+    opacity: 0.5
 }
 /*-----------------------------------------------------------*/
 
@@ -159,9 +160,9 @@ h5,
 h6*/
 #erg {
     display: inline-block;
-    padding: 5px 15px 5px 15px;
+    /*padding: 5px 15px 5px 15px;*/
     font-style: italic;
-    background-color: #212126;
+    /*background-color: #212126;*/
 
 }
 
@@ -169,6 +170,8 @@ h1 {
     font-size: 45px;
     margin: 0;
     color: yellow;
+    font-style: italic;
+
 }
 
 section {
@@ -204,3 +207,12 @@ header p {
 .img-fluid {
     opacity: 0.8;
 }
+
+
+/*-------------------------------------reviews------------------*/
+
+.carousel-item {
+    padding: 50px 180px 50px 180px;
+}
+
+/*-------------------------------------------------------*/
