@@ -1,70 +1,28 @@
-body {
-    background-color: #16161A;
-    color: white;
-    /*font-size: 120%;*/
-    font-family: 'Montserrat', sans-serif;
+/*------------------------SCROLL--------------------------------*/
+::-webkit-scrollbar {
+    width: 5px;
+    left: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #212126;
+}
+
+::-webkit-scrollbar-thumb {
+    background: yellow;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-}
 
-#brder1 {
-    position: absolute;
-    margin: 0 40% 0 40%;
-    border: 1px solid yellow;
-}
-
-h1 {
-    font-size: 45px;
-    margin: 0;
-    color: yellow;
-}
-header {
-    padding-top: 50px;
-}
-header p {
-    padding-top: 20px
-}
-
-.personal-details {
-    display: inline;
-}
-
-.personal-details small {
-    color: yellow;
-    font-size: 30px;
-}
-.subtitle {
-    color: grey;
-}
-
-.name-wrapper span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300
-}
-
-.img-fluid {
-    /*width: 328px;*/
-    opacity: 0.8;
-}
-
-section {
-    padding-top: 100px;
-}
+/*-----------------------------------------------------------*/
 
 
+
+/*--------------------------SKILLS---------------------------------*/
 
 .pads {
     padding-top: 50px;
 }
-/*
-#a {
-    margin-top: 100px;
-}
-*/
 
 .skillbar {
     height: 5px;
@@ -110,7 +68,18 @@ section {
     border-right: 5px solid #16161A;
 }
 
+/*-----------------------------------------------------------*/
 
+
+
+
+
+
+/*----------------------------------SERVICES-------------------------*/
+
+.services {
+    padding-top: 30px;
+}
 ul {
     list-style: none;
     /* Remove default bullets */
@@ -131,19 +100,107 @@ ul {
     /* Also needed for space (tweak if needed) */
 }
 
+/*-----------------------------------------------------------*/
 
-::-webkit-scrollbar {
-    width: 5px;
+
+
+
+
+/*----------------------HEADER---------------------------------*/
+
+#lang_switcher {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 35px;
+    color: white
 }
 
-::-webkit-scrollbar-track {
-    background: #212126;
+#lang_switcher:hover {
+    color: grey;
+}
+/*-----------------------------------------------------------*/
+
+
+
+#brder1 {
+    border: 1px solid yellow;
+    margin: auto;
+    width: 50%;
 }
 
-::-webkit-scrollbar-thumb {
-    background: yellow;
+body {
+    background-color: #16161A;
+    color: white;
+    /*font-size: 120%;*//*
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 300*/
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: yellow;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    font-size: 18px
+}
+
+/*h2,
+h3,
+h4,
+h5,
+h6*/
+#erg {
+    display: inline-block;
+    padding: 5px 15px 5px 15px;
+    font-style: italic;
+    background-color: #212126;
+
+}
+
+h1 {
+    font-size: 45px;
+    margin: 0;
+    color: yellow;
+}
+
+section {
+    padding-top: 100px;
+}
+
+header {
+    padding-top: 50px;
+}
+
+header p {
+    padding-top: 20px
+}
+
+.personal-details {
+    display: inline;
+}
+
+.personal-details small {
+    color: yellow;
+    font-size: 30px;
+}
+
+.subtitle {
+    color: grey;
+}
+
+.name-wrapper span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300
+}
+
+.img-fluid {
+    opacity: 0.8;
 }
