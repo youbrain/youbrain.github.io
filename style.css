@@ -211,8 +211,235 @@ header p {
 
 /*-------------------------------------reviews------------------*/
 
-.carousel-item {
-    padding: 50px 180px 50px 180px;
+.carousel-inner .carousel-item {
+    /*padding: 50px 70px 50px 70px;*/
+    /*height: 250px; */
+    padding: 10px 0 50px;
+}
+
+.review_img {
+    /*display: block;*/
+    display: inline;
+    width: 50px;
+    /*padding-right: 20px;*/
+}
+
+.checked {
+  color: orange;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 300px;
+    width: 50px;
+    height: 50px;
+}
+
+.review_author {
+    font-size: 27px;
+    color: white;
+}
+
+.review_author:hover {
+    color: white;
+    opacity: 0.5;
+    text-decoration: none;
+
+}
+
+.review_desc {
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.review_right {
+    float: right;
+}
+
+.review_right span {
+    background-color: yellow;
+    color: black;
+    margin-left: 20px;
+    padding: 2px;
+}
+
+.carousel-item div {
+    /*padding-left: 20px;*/
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carouselExampleIndicators {
+    min-height: 350px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 557px) {
+  .hide_mob {
+    visibility: hidden;
+    display: : none;
+  }
 }
 
 /*-------------------------------------------------------*/
+
+
+
+.article .blog-img .link .read {
+    display: table-cell;
+    vertical-align: middle;
+    color: yellow;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    position: relative;
+}
+
+.article .blog-img .link .read:after {
+    position: absolute;
+    top: 9px;
+    /*left: 50px;*/
+    content: '';
+    background: yellow;
+    width: 40px;
+    height: 1px;
+}
+
+.article .blog-img:hover .overlay {
+    opacity: 1;
+}
+
+.article .blog-img:hover .link {
+    opacity: 1;
+    bottom: 150px;
+}
+
+.article .blog-img:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.article .desc {
+    position: relative;
+    margin: 15px;
+}
+
+.article .desc .meta {
+    color: #9da2a4;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    background: #16161A;
+    color: white;
+    padding: 5px 5px;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    -webkit-transition: 1s;    
+    /*font-family: 'Jura', sans-serif;*/
+
+    /*font-weight: 600;*/
+
+    letter-spacing: 1px;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+    -ms-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+    -o-box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+}
+
+.article .desc h2 {
+    font-size: 28px;
+}
+
+.article .desc h2 a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.article:hover .meta {
+    background: #16161A;
+    /*color: #9da2a4;*/
+}
+
+
+.article {
+    display: block;
+    margin-bottom: 60px;
+    /*width: 85%;*/
+    margin: 40px;
+    border: 1px solid yellow;
+}
+
+.article .blog-img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item {
+    padding: 0;    
+ }
+
+.article .blog-img img {
+    position: relative;
+    max-width: 100%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+}
+
+.article .blog-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.article .blog-img .link {
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    display: table;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+}
+
+
+a {
+    color: yellow
+}
+
+a:hover {
+    color: yellow;
+    opacity: 0.5
+}
