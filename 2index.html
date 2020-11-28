@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
 
-    	<script src="https://kit.fontawesome.com/b485297a0d.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/b485297a0d.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css">
 
@@ -16,34 +16,57 @@
 		<header class="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-lg-3">
 						<div class="profile-img">
 							<img src="img/img.jpg" class="img-fluid" alt=""/>
 						</div>
 					</div>
-					<div class="col-md-9">
+					<div class="col-lg-9">
 						<div class="name-wrapper">
 							<h1 class="name">Александр Мачек</h1>
 							<span class="subtitle">Python разработчик на фрилансе</span>
 							<!-- <a href=""><img id="lang_switcher" src="img/translation.png"></a> -->
+							<!-- <span id="location"><i class="fas fa-map-marker-alt"></i> Львов, Украина</span> -->
 							<a href=""><i class="fas fa-language" id="lang_switcher"></i></a>
 						</div>
 						<p>
 							Привет, я разработчик с опытом работы более 3 лет.<br>
-							Имею большой опыт работы с парсингом и Telegram. За все время было более 17 клиентов, в общей сложности выполнено 36 проектов (большая их часть - Telegram боты и автоматизированные аккаунты разного уровня сложности). Зачастую мои клиенты обращаются ко мне снова. У меня большой опыт работы на СНГ фрилансе, где я нахожусь в топ-5 среди всех python-разработчиков. Я преподаю Python, Arduino и Frontend разработку в одной из самых популярных ИТ-школ в моем городе.
+							Имею большой опыт работы с парсингом и Telegram. За все время было более 17 заказчиков, в общей сложности выполнено 36 проектов (большая их часть - Telegram боты и автоматизированные аккаунты разного уровня сложности). Зачастую мои клиенты обращаются ко мне снова. У меня большой опыт работы на СНГ фрилансе, где я нахожусь в топ-5 среди всех python-разработчиков. Я преподаю Python, Arduino и Frontend разработку в одной из самых популярных IT-школ в моем городе.
 						</p>
+						
+						<div class="row" style="margin-top: 20px">
+							<div class="col">
+								<a href="mailto:aleksandr.machek@gmail.com"><span class="subtitle">aleksandr.machek@gmail.com</span></a>
+							</div>
+							<div class="col">
+								<div class="contact_me">
+									<a href="https://t.me/sha256punk">
+										<button type="button" class="btn btn-outline-warning"><i class="fab fa-telegram-plane"></i> Telegram</button>
+									</a>
+								</div>
+							</div>
+							<!-- 
+								<a href=""><i class="far fa-envelope"></i> aleksandr.machek@gmail.com</a>							
+							</div>
+							<div class="col">
+								<a href=""><i class="fab fa-telegram-plane"></i> Telegram</a>					
+							</div>
+							<div class="col">
+								<a href=""><i class="fab fa-github"></i> Github</a>
+							</div> -->
+						<!-- </div> -->
 					</div>
 				</div>
 			</div>
 		</header>
 
 
-
-
 		<section class="section-wrapper stats" id="a">
 			<div class="container">
 				<div class="row">
-					<div class="col" style="padding-right: 40px">
+					<div class="col-lg">
+						<h2 class="show_on_mob">" Hard skills "</h2>
+
 						<div class="pads">
 							<div class="skillbar clearfix " data-percent="100%">
 								<div class="skillbar-title"><span>Python</span></div>
@@ -73,13 +96,13 @@
 							</div> <!-- End Skill Bar -->
 						</div>
 					</div>
-					<div class="col">
-						<h2 id="erg">"Hard skills"</h2><br>
+					<div class="col-lg">
+						<h2 class="hide_on_mob">" Hard skills "</h2>
 						<p>
-							Для Telegram я использую такие библиотеки, как Telethon, PTB, iogram, реже Telebot.<br>
-							В парсинге - Selenium, BeautifulSoup, Scrappy<br>
-							Для развертывания проектов использую Ubuntu VPS, могу настроить все необходимое, использую докер.<br>
-							Используйте СУБД, такие как postgrace SQL, mySQL, SQLite. В большинстве случаев используйте Peewee ORM, но иногда и SQL Alchemy.<br>
+							Для Telegram я использую такие библиотеки, как Telethon, PTB, iogram, реже Telebot.
+							В парсинге - Selenium, BeautifulSoup, Scrappy. 
+							Используйте DBMS, такие как postgresql, mySQL, SQLite. В большинстве случаев использую ORM Peewee, но иногда и SQL Alchemy. 
+							Для развертывания проектов использую Ubuntu VPS, могу настроить все необходимое, использую Docker. 
 							Имею большой опыт программирования микроконтроллеров (Arduino) и работы с микрокомпьютерами Raspberry pi. Также есть опит работы с технологией блокчейн.
 						<p>
 				   </div>
@@ -132,37 +155,37 @@
 		<section class="section-wrapper skills" id="c">
 			<div class="container">
 				<div class="row">
-					<div class="col" style="padding-right: 40px">
-						<h2>"Soft skills"</h2>
+					<div class="col-sm	" style="padding-right: 40px">
+						<h2>" Soft skills "</h2>
 						<p>
 							Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Placeat sequi maiores nobis quibusdam. Eum, eveniet voluptatum ea eaque iure itaque laudantium dolorem consequuntur harum. Nostrum corporis amet velit voluptas ex eaque, omnis exercitationem accusantium alias mollitia temporibus dignissimos praesentium inventore. Ad hic corrupti explicabo cupiditate labore, voluptate quod voluptatum, quo aliquid doloribus repudiandae. Fuga, architecto corrupti, odit accusantium ab itaque aut labore. Eveniet dignissimos ipsa veniam minus ducimus, culpa incidunt qui aliquid amet, quasi itaque impedit nostrum facere sed enim?
 						<p>
 				   </div>
-					<div class="col">	
+					<div class="col-sm">	
 						<div class="pads">
 							<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>HTML5</span></div>
+								<div class="skillbar-title"><span>Teamwork</span></div>
 								<span class="right_percent">30%</span>
 								<div class="skillbar-bar"></div>
 							</div> <!-- End Skill Bar -->
 						</div>
 						<div class="pads">
 							<div class="skillbar clearfix " data-percent="20%">
-								<div class="skillbar-title"><span>HTML5</span></div>
+								<div class="skillbar-title"><span>Networking</span></div>
 								<span class="right_percent">30%</span>
 								<div class="skillbar-bar"></div>
 							</div> <!-- End Skill Bar -->
 						</div>
 						<div class="pads">
 							<div class="skillbar clearfix " data-percent="20%">
-								<div class="skillbar-title"><span>HTML5</span></div>
+								<div class="skillbar-title"><span>Time managment</span></div>
 								<span class="right_percent">30%</span>
 								<div class="skillbar-bar"></div>
 							</div> <!-- End Skill Bar -->
 						</div>
 						<div class="pads">
 							<div class="skillbar clearfix " data-percent="55%">
-								<div class="skillbar-title"><span>HTML5</span></div>
+								<div class="skillbar-title"><span>Public appearances</span></div>
 								<span class="right_percent">30%</span>
 								<div class="skillbar-bar"></div>
 							</div> <!-- End Skill Bar -->
@@ -170,7 +193,7 @@
 				   </div>
 
 				</div><div class="row services">
-					<div class="col">
+					<div class="col-sm	">
 						<ul class="skills">
 							<li>
 								git / github
@@ -180,7 +203,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-sm	">
 						<ul class="skills">
 							<li>
 								C/C++
@@ -190,7 +213,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-sm	">
 						<ul class="skills">
 							<li>
 								C#
@@ -200,7 +223,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-sm	">
 						<ul class="skills">
 							<li>
 								C/C++
@@ -217,8 +240,8 @@
 
 		<section class="section-wrapper reviews" id="c">
 			<div class="container">
-            	<h2>Recent Reviews</h2>
-            	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<h2 style="font-style: normal;">/ Недавние отзывы</h2>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
 					  	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 					  	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -226,131 +249,131 @@
 					  	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 					  	<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 					</ol>
-				    <div class="carousel-inner">
-				        <div class="carousel-item active">
-				        	<div class="review_right">
-				        		<span>4 июля</span><span>6 675 ₴</span>
-				        	</div>
-			        		<a href="https://freelancehunt.com/employer/btckovalev.html" class="review_author">Андрей Ковалёв</a><br>
-				        	<span class="review_desc">Telegram bot</span><br><br>
-			            	<div>Я первый раз использовал биржу фрилансеров.<br>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="review_right">
+								<span>4 июля</span><span>6 675 ₴</span>
+							</div>
+							<a href="https://freelancehunt.com/employer/btckovalev.html" class="review_author">Андрей Ковалёв</a><br>
+							<span class="review_desc">Telegram bot</span><br><br>
+							<div>Я первый раз использовал биржу фрилансеров.<br>
 								Александр, выполнил свою работу быстрее чем я ожидал, помог разобраться в разных моментах,<br>
 								и не смотря на то что я не все упоменул в ТЗ, Александр в процессе выполнения работы устранил все недостатки и даже дополнил.<br>
 								Я был приятно удевлен качеством и скоростью.... Добавлю что это адекватный человек который не смотря на мою неопытность, и на мои вечные "переделки" устойчиво выдерживал все это))<br>
 								В дальнейшем я планирую работать только с этим человек! настоятельно рекомендую к сотрудничеству !!!<br>
 								Больше я и искать никого не буду другого....</div>
-				        </div>
-				        <div class="carousel-item">
-				        	<div class="review_right">
-				        		<span>11 августа</span><span>28 000 ₽</span>
-				        	</div>
-			        		<a href="https://freelancehunt.com/employer/droper.html" class="review_author">Николай Савушкин</a><br>
-				        	<span class="review_desc">Доработка бота <a href="https://t.me/GullGull_bot">Чайка</a></span><br><br>
-			            	<div>Александр, хороший исполнитель, помог выявить главные проблемы по боту и решил их, добавил свои идеи, которые мне понравились.<br>По срокам чутка съехал, но не критично. В целом работой доволен, так же продолжаю с ним сотрудничество, <br>так как он доводит дело до конца и рассказывает, как устроенны его доработки относительно простым языком. Спасибо</div>
-				        </div>
-				        <div class="carousel-item ">
-				        	<div class="review_right">
-				        		<span>20 апреля</span><span>3 910 ₴</span>
-				        	</div>
-			        		<a href="https://freelancehunt.com/employer/Dmytro3.html" class="review_author">Дмитрий Семенюк</a><br>
-				        	<span class="review_desc">Телеграм бот для проверки регистрации (Telegram bot)</span><br><br>
-			            	<div>
-			            		Выражаю благодарность!<br>
+						</div>
+						<div class="carousel-item">
+							<div class="review_right">
+								<span>11 августа</span><span>28 000 ₽</span>
+							</div>
+							<a href="https://freelancehunt.com/employer/droper.html" class="review_author">Николай Савушкин</a><br>
+							<span class="review_desc">Доработка бота <a href="https://t.me/GullGull_bot">Чайка</a></span><br><br>
+							<div>Александр, хороший исполнитель, помог выявить главные проблемы по боту и решил их, добавил свои идеи, которые мне понравились.<br>По срокам чутка съехал, но не критично. В целом работой доволен, так же продолжаю с ним сотрудничество, <br>так как он доводит дело до конца и рассказывает, как устроенны его доработки относительно простым языком. Спасибо</div>
+						</div>
+						<div class="carousel-item ">
+							<div class="review_right">
+								<span>20 апреля</span><span>3 910 ₴</span>
+							</div>
+							<a href="https://freelancehunt.com/employer/Dmytro3.html" class="review_author">Дмитрий Семенюк</a><br>
+							<span class="review_desc">Телеграм бот для проверки регистрации (Telegram bot)</span><br><br>
+							<div>
+								Выражаю благодарность!<br>
 								Работа выполнена на высоком уровне в соответствии с техническим заданием. Закончили раньше оговоренных сроков, сделали качественно.<br>
 								Александр легкий в общении и быстро входит в курс дела. Буду дальше продолжать сотрудничество.<br>
 								Отличный специалист, рекомендую!
-			            	</div>
-				        </div>
-				        <div class="carousel-item ">
-				        	<div class="review_right">
-				        		<span>6 мая</span><span>6 250 ₴</span>
-				        	</div>
-			        		<a href="https://freelancehunt.com/employer/Dmytro3.html" class="review_author">Дмитрий Семенюк</a><br>
-				        	<span class="review_desc">Телеграм бот для парсинга/спама в телеграм</span><br><br>
-			            	<div>
-			            		Уже второй наш совместный проект с Александром.Все выполнено в срок!<br> Рекомендую как ответственного и высококвалифицированного специалиста, точно останетесь довольны результатом. Будем работать и дальше над новыми интересными проектами!
-			            	</div>
-				        </div>
-				        <div class="carousel-item ">
-				        	<div class="review_right">
-				        		<span>18 мая</span><span>5 300 ₴</span>
-				        	</div>
-			        		<a href="https://freelancehunt.com/employer/neojuw.html" class="review_author">Антон</a><br>
-				        	<span class="review_desc">Телеграм бот для проверки регистрации (Telegram bot)</span><br><br>
-			            	<div>
-			            		Работаем с Александром уже не первый раз, как всегда ответственно подошёл к задаче, сделал всё отлично, согласно ТЗ.<br>
-			            		Приятен в разговоре, быстро входит в курс дела, предлагает улучшения. Советую как профессионала своего дела
-			            	</div>
-				        </div>
-				    </div>
-				    <a class="carousel-control-prev hide_mob" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				        <span class="sr-only">Previous</span>
-				    </a>
-				    <a class="carousel-control-next hide_mob" href="#carouselExampleIndicators" role="button" data-slide="next">
-				        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				        <span class="sr-only">Next</span>
-				    </a>
+							</div>
+						</div>
+						<div class="carousel-item ">
+							<div class="review_right">
+								<span>6 мая</span><span>6 250 ₴</span>
+							</div>
+							<a href="https://freelancehunt.com/employer/Dmytro3.html" class="review_author">Дмитрий Семенюк</a><br>
+							<span class="review_desc">Телеграм бот для парсинга/спама в телеграм</span><br><br>
+							<div>
+								Уже второй наш совместный проект с Александром.Все выполнено в срок!<br> Рекомендую как ответственного и высококвалифицированного специалиста, точно останетесь довольны результатом. Будем работать и дальше над новыми интересными проектами!
+							</div>
+						</div>
+						<div class="carousel-item ">
+							<div class="review_right">
+								<span>18 мая</span><span>5 300 ₴</span>
+							</div>
+							<a href="https://freelancehunt.com/employer/neojuw.html" class="review_author">Антон</a><br>
+							<span class="review_desc">Телеграм бот для проверки регистрации (Telegram bot)</span><br><br>
+							<div>
+								Работаем с Александром уже не первый раз, как всегда ответственно подошёл к задаче, сделал всё отлично, согласно ТЗ.<br>
+								Приятен в разговоре, быстро входит в курс дела, предлагает улучшения. Советую как профессионала своего дела
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev hide_mob" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next hide_mob" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
-            </div>
-        </section>
+			</div>
+		</section>
 
 
 		<section class="section-wrapper reviews" id="c">
 			<div class="container">
-            	<h2>Recent Reviews</h2>
-            	<div class="row">
-            		<div class="col-sm">
-            			<div class="article animate-box">
-		                    <a href="blog.html" class="blog-img">
-		                        <img class="img-responsive" src="img/img-1.jpg" alt="html5 bootstrap by colorlib.com">
-		                        <div class="overlay"></div>
-		                        <div class="link">
-		                            <span class="read">Read more</span>
-		                        </div>
-		                    </a>
-		                    <div class="desc">
-		                        <span class="meta">15, Feb 2018</span>
-		                        <h2><a href="blog.html">A Japanese Constellation</a></h2>
-		                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-		                    </div>
-		                </div>
-            		</div>
-            		<div class="col-sm">
-            			<div class="article animate-box">
-		                    <a href="blog.html" class="blog-img">
-		                        <img class="img-responsive" src="img/img-1.jpg" alt="html5 bootstrap by colorlib.com">
-		                        <div class="overlay"></div>
-		                        <div class="link">
-		                            <span class="read">Read more</span>
-		                        </div>
-		                    </a>
-		                    <div class="desc">
-		                        <span class="meta">15, Feb 2018</span>
-		                        <h2><a href="blog.html">A Japanese Constellation</a></h2>
-		                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-		                    </div>
-		                </div>
-            		</div>
-            		<div class="col-sm">
-            			<div class="article animate-box">
-		                    <a href="blog.html" class="blog-img">
-		                        <img class="img-responsive" src="img/img-1.jpg" alt="html5 bootstrap by colorlib.com">
-		                        <div class="overlay"></div>
-		                        <div class="link">
-		                            <span class="read">Read more</span>
-		                        </div>
-		                    </a>
-		                    <div class="desc">
-		                        <span class="meta">15, Feb 2018</span>
-		                        <h2><a href="blog.html">A Japanese Constellation</a></h2>
-		                        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-		                    </div>
-		                </div>
-            		</div>
-            	</div>
-            </div>
-        </section>
+				<h2>/ Портфолио</h2>
+				<div class="row">
+					<div class="col-sm">
+						<div class="article animate-box">
+							<a href="blog.html" class="blog-img">
+								<img class="img-responsive" src="img/img-1.jpg" alt="html5 bootstrap by colorlib.com">
+								<div class="overlay"></div>
+								<div class="link">
+									<span class="read">Read more</span>
+								</div>
+							</a>
+							<div class="desc">
+								<span class="meta">15, Feb 2018</span>
+								<h2><a href="blog.html">A Japanese Constellation</a></h2>
+								<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="article animate-box">
+							<a href="blog.html" class="blog-img">
+								<img class="img-responsive" src="img/img-1.jpg" alt="html5 bootstrap by colorlib.com">
+								<div class="overlay"></div>
+								<div class="link">
+									<span class="read">Read more</span>
+								</div>
+							</a>
+							<div class="desc">
+								<span class="meta">15, Feb 2018</span>
+								<h2><a href="blog.html">A Japanese Constellation</a></h2>
+								<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm">
+						<div class="article animate-box">
+							<a href="blog.html" class="blog-img">
+								<img class="img-responsive" src="img/img-1.jpg" alt="html5 bootstrap by colorlib.com">
+								<div class="overlay"></div>
+								<div class="link">
+									<span class="read">Read more</span>
+								</div>
+							</a>
+							<div class="desc">
+								<span class="meta">15, Feb 2018</span>
+								<h2><a href="blog.html">A Japanese Constellation</a></h2>
+								<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 
@@ -358,33 +381,33 @@
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="scripts.js"></script>
   		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script> -->
-    	<!-- <script src="js/bootstrap.min.js"></script> -->
+		<!-- <script src="js/bootstrap.min.js"></script> -->
 
-    	<script src="js/animationCounter.js"></script>
-	    <script type="text/javascript">
-		    $('#projects_count').animationCounter({
-		        delay: 40,
-		        start: 0,
-		        end: 42
-		    });
+		<script src="js/animationCounter.js"></script>
+		<script type="text/javascript">
+			$('#projects_count').animationCounter({
+				delay: 40,
+				start: 0,
+				end: 42
+			});
 
-		    $('#projects_count2').animationCounter({
-		        delay: 40,
-		        start: 0,
-		        end: 80
-		    });
+			$('#projects_count2').animationCounter({
+				delay: 40,
+				start: 0,
+				end: 80
+			});
 
-		    $('#projects_count3').animationCounter({
-		        delay: 40,
-		        start: 0,
-		        end: 99
-		    });
+			$('#projects_count3').animationCounter({
+				delay: 40,
+				start: 0,
+				end: 99
+			});
 
-		    $('#projects_count4').animationCounter({
-		        delay: 40,
-		        start: 0,
-		        end: 56
-		    });
-	    </script>
+			$('#projects_count4').animationCounter({
+				delay: 40,
+				start: 0,
+				end: 56
+			});
+		</script>
 	</body>
 </html>

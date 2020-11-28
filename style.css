@@ -78,7 +78,7 @@
 /*----------------------------------SERVICES-------------------------*/
 
 .services {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 ul {
     list-style: none;
@@ -110,8 +110,8 @@ ul {
 
 #lang_switcher {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: 15px;
     font-size: 35px;
     color: yellow
 }
@@ -119,6 +119,37 @@ ul {
 #lang_switcher:hover {
     /*color: grey;*/
     opacity: 0.5
+}
+
+#contact_icons a {
+    font-size: 25px;
+    /*color: #8A8A0D;*/
+    padding-right: 20px
+}
+
+#location {
+    color: grey;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    float: right;
+}
+
+#right_me i {
+    /*position: absolute;*/
+    color: black;
+    font-size: 25px;
+    /*left: 20px;*/
+    /*bottom: 10px;*/   
+}
+#right_me {
+    float: right;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    display: inline;
+    background-color: yellow;
+    color: black
 }
 /*-----------------------------------------------------------*/
 
@@ -133,8 +164,8 @@ ul {
 body {
     background-color: #16161A;
     color: white;
+    /*font-family: 'Montserrat', sans-serif;*/
     /*font-size: 120%;*//*
-    font-family: 'Helvetica', sans-serif;
     font-weight: 300*/
 }
 
@@ -158,7 +189,7 @@ h3,
 h4,
 h5,
 h6*/
-#erg {
+h2 {
     display: inline-block;
     /*padding: 5px 15px 5px 15px;*/
     font-style: italic;
@@ -167,6 +198,8 @@ h6*/
 }
 
 h1 {
+    /*white-space: nowrap;*/
+    /*width: 100%;*/
     font-size: 45px;
     margin: 0;
     color: yellow;
@@ -205,7 +238,7 @@ header p {
 }
 
 .img-fluid {
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 
@@ -214,7 +247,7 @@ header p {
 .carousel-inner .carousel-item {
     /*padding: 50px 70px 50px 70px;*/
     /*height: 250px; */
-    padding: 10px 0 50px;
+    padding: 10px 70px 50px 70px;
 }
 
 .review_img {
@@ -229,14 +262,18 @@ header p {
 }
 
 .carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 300px;
-    width: 50px;
-    height: 50px;
+    /*position: absolute;*/
+    /*top: 300px;*/
+    width: 70px;
+    /*height: 50px;*/
 }
 
 .review_author {
     font-size: 27px;
+    font-family: 'Montserrat', sans-serif;
+
+    font-weight: 900;
+
     color: white;
 }
 
@@ -257,10 +294,13 @@ header p {
 }
 
 .review_right span {
-    background-color: yellow;
-    color: black;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: yellow;
+    /*background-color: yellow;*/
+    /*color: black;*/
     margin-left: 20px;
-    padding: 2px;
+    padding: 4px 9px 4px 9px;
 }
 
 .carousel-item div {
@@ -275,16 +315,99 @@ header p {
     padding-top: 10px;
 }
 
-@media screen and (max-width: 557px) {
+@media screen and (max-width: 793px) {
   .hide_mob {
     visibility: hidden;
     display: : none;
   }
+  .carousel-inner .carousel-item {
+    padding: 10px 0 50px 0 !important;
+    /*padding: 0;*/
+  }
 }
 
+@media screen and (max-width: 575px) {
+    header {
+        padding-top: 15px;
+    }
+    h1 {
+        font-size: 30px
+    }
+    #lang_switcher {
+        /*position: inherit;*/
+        /*display: block;*/
+        /*width: 100%;*/
+        /*float: left*/
+    }
+    .contact_me {
+        width: 100%;
+        /*padding-top: 20px;*/
+        padding-left: 0
+    }
+    .col-lg  {
+        /*padding-bottom: 100px*/
+    }
+}
+@media screen and (max-width: 991px) {
+    .hide_on_mob {
+        display: none;
+    }
+    .show_on_mob {
+        display: block !important;
+        /*padding-bottom: 0px*/
+    }
+    .col-lg p {
+        padding-top: 20px
+    }
+}
+
+.show_on_mob {
+    display: none;
+}
+.skills, .pads {
+    /*font-size: 19px*/
+}
+
+.services {
+    white-space: nowrap;
+}
 /*-------------------------------------------------------*/
 
 
+
+
+
+/*------------------------------CONTACT ME-------------------------*/
+.contact_me {
+    float: right;
+}
+
+.btn {
+    color: yellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    margin: 0px 15px 0 15px;
+    /*font-size: 20px*/
+}
+.btn:hover {
+    border: 1px solid yellow;
+    background-color: yellow;
+}
+/*
+.contact_me a {
+    text-decoration: none;
+    color: white;
+    display: block
+}
+
+.contact_me a:hover {
+    color: white;
+    opacity: 0.5
+}
+*/
+
+
+/*-------------------------------------------------------*/
 
 .article .blog-img .link .read {
     display: table-cell;
@@ -435,11 +558,19 @@ header p {
 }
 
 
-a {
-    color: yellow
+p a, .review_desc a {
+    color: yellow;
+}
+
+p a, .review_desc a:hover {
+    color: yellow;
+    opacity: 0.5
+}
+
+.pads, .services {
+    font-size: 20px
 }
 
 a:hover {
-    color: yellow;
-    opacity: 0.5
+    text-decoration: none;
 }
