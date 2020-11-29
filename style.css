@@ -78,7 +78,7 @@
 /*----------------------------------SERVICES-------------------------*/
 
 .services {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 ul {
     list-style: none;
@@ -284,6 +284,11 @@ header p {
 
 }
 
+.review_text {
+    font-size: 18px;
+}
+
+
 .review_desc {
     color: grey;
     margin-bottom: 20px;
@@ -361,6 +366,12 @@ header p {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .contact_me {
+        padding-top: 20px;
+    }
+}
+
 .show_on_mob {
     display: none;
 }
@@ -413,7 +424,7 @@ header p {
     display: table-cell;
     vertical-align: middle;
     color: yellow;
-    font-size: 12px;
+    /*font-size: 12px;*/
     text-transform: uppercase;
     letter-spacing: 5px;
     -webkit-transform: rotate(90deg);
@@ -467,7 +478,7 @@ header p {
     background: #16161A;
     color: white;
     padding: 5px 5px;
-    font-size: 19px;
+    /*font-size: 19px;*/
     text-transform: uppercase;
     letter-spacing: 4px;
     -webkit-transition: 1s;    
@@ -486,7 +497,7 @@ header p {
 }
 
 .article .desc h2 {
-    font-size: 28px;
+    /*font-size: 28px;*/
 }
 
 .article .desc h2 a {
@@ -504,7 +515,7 @@ header p {
     display: block;
     margin-bottom: 60px;
     /*width: 85%;*/
-    margin: 40px;
+    /*margin: 40px;*/
     border: 1px solid yellow;
 }
 
@@ -558,11 +569,19 @@ header p {
 }
 
 
-p a, .review_desc a {
+.review_desc a {
     color: yellow;
 }
 
-p a, .review_desc a:hover {
+p a {
+    color: yellow;
+}
+
+p a:hover {
+    color: yellow;
+    opacity: 0.5
+}
+.review_desc a:hover {
     color: yellow;
     opacity: 0.5
 }
@@ -573,4 +592,13 @@ p a, .review_desc a:hover {
 
 a:hover {
     text-decoration: none;
+}
+
+.portfolio_title {
+    color: white;
+    /*padding: 20px 0 20px 0;*/
+}
+
+h2 {
+    padding-bottom: 20px
 }
