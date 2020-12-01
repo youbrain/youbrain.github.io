@@ -107,12 +107,27 @@ ul {
 
 
 /*----------------------HEADER---------------------------------*/
+.i_yellow {
+    /*color: yellow;*/
+    font-size: 15px
+}
+.yellow {
+    /*color: yellow;*/
+    /*font-size: 20px*/
+}
+#resume {
+    font-size: 20px;
+    color: grey;
+    /*font-weight: 700;*/
+    font-family: 'Montserrat', sans-serif;
+}
 
 #lang_switcher {
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 15px;
     font-size: 35px;
+    height: 32px;
     color: yellow
 }
 
@@ -165,8 +180,8 @@ body {
     background-color: #16161A;
     color: white;
     /*font-family: 'Montserrat', sans-serif;*/
-    /*font-size: 120%;*//*
-    font-weight: 300*/
+    /*font-size: 120%;*/
+    /*font-weight: 300*/
 }
 
 h1,
@@ -188,7 +203,7 @@ p {
 h3,
 h4,
 h5,
-h6*/
+h6
 h2 {
     display: inline-block;
     /*padding: 5px 15px 5px 15px;*/
@@ -208,7 +223,7 @@ h1 {
 }
 
 section {
-    padding-top: 100px;
+    margin-top: 150px;
 }
 
 header {
@@ -216,7 +231,8 @@ header {
 }
 
 header p {
-    padding-top: 20px
+    padding-top: 20px;
+    margin-bottom: 0
 }
 
 .personal-details {
@@ -230,24 +246,36 @@ header p {
 
 .subtitle {
     color: grey;
+    display: block;
 }
 
 .name-wrapper span {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300
+    font-weight: 300;
 }
 
+.name {
+    font-style: italic;
+
+}
 .img-fluid {
     /*opacity: 0.8;*/
 }
 
 
 /*-------------------------------------reviews------------------*/
+.carousel-indicators {
+    position: absolute;
+    top: 20;
+}
+.carousel-inner {
+    /*padding-top: 30px*/
+}
 
 .carousel-inner .carousel-item {
     /*padding: 50px 70px 50px 70px;*/
     /*height: 250px; */
-    padding: 10px 70px 50px 70px;
+    padding: 40px 70px 50px 70px;
 }
 
 .review_img {
@@ -262,10 +290,12 @@ header p {
 }
 
 .carousel-control-prev, .carousel-control-next {
-    /*position: absolute;*/
-    /*top: 300px;*/
-    width: 70px;
-    /*height: 50px;*/
+    position: absolute;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    top: -10px;
+    /*width: 70px;*/
+    height: 50px;
 }
 
 .review_author {
@@ -296,6 +326,7 @@ header p {
 
 .review_right {
     float: right;
+    margin-top: 10px;
 }
 
 .review_right span {
@@ -304,7 +335,7 @@ header p {
     color: yellow;
     /*background-color: yellow;*/
     /*color: black;*/
-    margin-left: 20px;
+    margin: 20px;
     padding: 4px 9px 4px 9px;
 }
 
@@ -316,7 +347,7 @@ header p {
 }
 
 #carouselExampleIndicators {
-    min-height: 350px;
+    min-height: 405px;
     padding-top: 10px;
 }
 
@@ -326,9 +357,13 @@ header p {
     display: : none;
   }
   .carousel-inner .carousel-item {
-    padding: 10px 0 50px 0 !important;
+    padding: 50px 0 50px 0 !important;
+    /*min-height: 607px;*/
     /*padding: 0;*/
-  }
+  }/*
+  .carousel-inner {
+        padding-top: 20px
+    }*/
 }
 
 @media screen and (max-width: 575px) {
@@ -366,7 +401,7 @@ header p {
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 458px) {
     .contact_me {
         padding-top: 20px;
     }
@@ -374,9 +409,6 @@ header p {
 
 .show_on_mob {
     display: none;
-}
-.skills, .pads {
-    /*font-size: 19px*/
 }
 
 .services {
@@ -390,6 +422,7 @@ header p {
 
 /*------------------------------CONTACT ME-------------------------*/
 .contact_me {
+    padding-top: 10px;
     float: right;
 }
 
@@ -526,10 +559,6 @@ header p {
     width: 100%;
 }
 
-.carousel-item {
-    padding: 0;    
- }
-
 .article .blog-img img {
     position: relative;
     max-width: 100%;
@@ -587,7 +616,8 @@ p a:hover {
 }
 
 .pads, .services {
-    font-size: 20px
+    /*font-size: 0px;*/
+    font-family: 'Montserrat';
 }
 
 a:hover {
@@ -600,5 +630,49 @@ a:hover {
 }
 
 h2 {
-    padding-bottom: 20px
+    /*padding-bottom: 20px*/
+}
+
+
+#contact_info i {
+    /*font-size: 25px*/
+}
+
+#contact_info {
+    padding-top: 20px;
+    /*padding-left: 20px;*/
+}
+
+
+.btns a {
+    color: yellow;
+    font-family: 'Montserrat'
+}
+.btns a:hover {
+    opacity: 0.5;
+    color: yellow;
+}
+
+.with_img {
+    border: 1px solid yellow;
+    /*border-radius: 5px*/
+}
+
+
+.with_img .col {
+    margin: 0;
+    padding: 0;
+}
+
+.with_img .content {
+    padding: 20px;
+}
+
+.with_img h2 {
+    font-size: 35px
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
